@@ -10,9 +10,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          # Full git history is needed to get a proper list of changed files within `super-linter`
-          fetch-depth: 0
+        
       - name: Simulando Continuous Delivery
         uses: actions/upload-artifact@v4
         with:
