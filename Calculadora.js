@@ -21,6 +21,6 @@ function calcular() {
         resultado = 'Essa operação é invalida';
     }
   
-    document.getElementById('resultado').textContent = `Resultados: ${resultado}`;
+    document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
   }
   
