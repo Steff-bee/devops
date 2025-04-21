@@ -7,12 +7,12 @@
 name: Continuous Integration teste
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "CI" ]
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: [ "main" ]
 jobs:
-  run-lint:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
