@@ -24,7 +24,7 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          
+
   cd:
     name: Continuous Delivery (Simulado)
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
       - name: Upload simulated build
         uses: actions/upload-artifact@v4
         with:
-          name: build-simulado
+          name: meuprojetoCICD
           path: |
-            index.html
+            README.md
             Calculadora.js
