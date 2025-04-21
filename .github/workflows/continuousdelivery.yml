@@ -24,13 +24,14 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        name: projetozipado.zip
+        name: meuprojeto.zip
     - name: Display structure of downloaded files
       run: ls -R
 
 
   docker:
     runs-on: ubuntu-latest
+    needs: deliver
     steps:
       
         - name: Checkout
