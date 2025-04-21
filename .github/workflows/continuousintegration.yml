@@ -10,7 +10,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "CI" ]
+    branches: [ "main" ]
 jobs:
   run-lint:
     runs-on: ubuntu-latest
