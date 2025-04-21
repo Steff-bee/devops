@@ -18,7 +18,7 @@ function calcular() {
         resultado = num2 !== 0 ? num1 / num2 : 'Divisão por zero';
         break;
       default:
-        resultado = 'Essa operação é invalida';
+        resultado = 'Operação invalida';
     }
   
     document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
