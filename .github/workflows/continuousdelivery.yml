@@ -2,7 +2,8 @@ name: Simulando Continuous Delivery
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+        -main
 jobs:
   deliver:
     runs-on: ubuntu-latest
