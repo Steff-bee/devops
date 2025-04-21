@@ -23,5 +23,5 @@ jobs:
          with:
             name: meuprojeto.zip
             path: |
-             Calduladora.js
+             Calculadora.js
              README.md
