@@ -15,12 +15,12 @@ function calcular() {
         resultado = num1 * num2;
         break;
       case '/':
-        resultado = num2 !== 0 ? num1 / num2 : 'Divisões por zero';
+        resultado = num2 !== 0 ? num1 / num2 : 'Divisão por zero';
         break;
       default:
         resultado = 'Essa operação é invalida';
     }
   
-    document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+    document.getElementById('resultado').textContent = `Resultados: ${resultado}`;
   }
   
