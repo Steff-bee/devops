@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [ "main" ]
 
+
 jobs:
   ci:
     name: Continuous Integration
@@ -23,6 +24,7 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+          
   cd:
     name: Continuous Delivery (Simulado)
     runs-on: ubuntu-latest
