@@ -53,7 +53,7 @@ jobs:
       # Instala as dependências
       - name: Install dependencies
         run: npm install
-        working-directory: /home/runner/work/devops
+        working-directory: /home/runner/devops
 
         # Ajuste de permissões
       - name: Fix permissions on Jest binary
@@ -62,4 +62,4 @@ jobs:
       # Executa os testes unitários
       - name: Run tests
         run: npx jest
-        working-directory: /home/runner/work/devops
+        working-directory: /home/runner/devops
