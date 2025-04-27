@@ -1,4 +1,4 @@
-const { calcular } = require('.src/Calculadora'); // Ajuste o caminho conforme necessário
+const { calcular } = require('../src/Calculadora');
 
 describe('Testes para a função calcular()', () => {
   test('Deve somar dois números', () => {
