@@ -54,6 +54,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+        # Ajuste de permissões
+      - name: Fix permissions on Jest binary
+        run: chmod +x ./node_modules/.bin/jest
+
       # Executa os testes unitários
       - name: Run tests
-        run: ./node_modules/.bin/jest
+        run: npx jest
