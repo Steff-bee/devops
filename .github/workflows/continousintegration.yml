@@ -56,4 +56,4 @@ jobs:
 
       # Executa os testes unitários
       - name: Run tests
-        run: npm test
+        run: ./node_modules/.bin/jest
