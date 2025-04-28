@@ -1,26 +1,28 @@
-function calcular() {
-    const num1 = parseFloat(document.getElementById('num1').value);
-    const num2 = parseFloat(document.getElementById('num2').value);
-    const operador = document.getElementById('operador').value;
-    let resultado;
-  
-    switch (operador) {
-      case '+':
-        resultado = num1 + num2;
-        break;
-      case '-':
-        resultado = num1 - num2;
-        break;
-      case '*':
-        resultado = num1 * num2;
-        break;
-      case '/':
-        resultado = num2 !== 0 ? num1 / num2 : 'Divisão por zero';
-        break;
-      default:
-        resultado = 'Operação inválido';
-    }
-  
-    document.getElementById('resultado').textContent = `Resultado: ${resultado}`;
+function calcular(num1, num2, operador) {
+  let resultado;
+
+  switch (operador) {
+    case '+':
+      resultado = num1 + num2;
+      break;
+    case '-':
+      resultado = num1 - num2;
+      break;
+    case '*':
+      resultado = num1 * num2;
+      break;
+    case '/':
+      if (num2 === 0) {
+        resultado = 'Divisão por zero';
+      } else {
+        resultado = num1 / num2;
+      }
+      break;
+    default:
+      resultado = 'Operação inválida';
   }
-  
+
+  return resultado;
+}
+
+module.exports = { calcular };
