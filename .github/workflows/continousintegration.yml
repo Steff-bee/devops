@@ -48,11 +48,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.14.0'  # Altere para a versão que você está usando
+          node-version: '22.x'  # Altere para a versão que você está usando
 
       # Instala as dependências
       - name: Install dependencies
-        run: npm install
+        run: |
+            npm cache clean --force
+            rm -rf node_modules
+            npm install
 
         # Ajuste de permissões
       - name: Fix permissions on Jest binary
